@@ -2,7 +2,7 @@
 
 The main objective of this project was to
 build a reponsive webpage layout. This is one
-of the challenges on [Frontend Mentor](https://www.frontendmentor.io/challenges).
+of the challenges on [Frontend Mentor](https://www.frontendmentor.io/challenges). You can visit the webpage [here](https://ecstatic-payne-513f8b.netlify.app).
 
 ---
 
