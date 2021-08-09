@@ -92,18 +92,18 @@
 }
 
 // Media query for the tab view and when the orientation is landscape(width>heigth).
-@media (max-width: 1000px) {
-  .main-section {
-    height: auto;
-    .card {
-      max-height: 100%;
-      margin: 1em 0;
-    }
-  }
-}
+// @media (max-width: 1000px) {
+//   .main-section {
+//     height: auto;
+//     .card {
+//       max-height: 100%;
+//       margin: 1em 0;
+//     }
+//   }
+// }
 
 // Media query for the mobile view when the orientation is portrait(height>width).
-@media (max-width: 767px) {
+@media (max-width: 960px) {
   .main-section {
     height: auto;
 
