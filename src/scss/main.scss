@@ -1,0 +1,128 @@
+@import "_global.scss";
+
+.main-section {
+  background-color: #f2f2f2;
+  height: 100vh;
+  color: #f2f2f2;
+  font-family: Lexend Deca, sans-serif;
+  @include flex-box(row, center, center);
+
+  .card {
+    //   Set the max-width and max-heigth for the card
+    max-width: 920px;
+    max-height: 500px;
+
+    // The width is 95% of the viewport if the
+    width: 95%;
+    @include flex-box(row, space-between, stretch);
+
+    .col {
+      padding: 3rem;
+      img {
+        margin-bottom: 2.25rem;
+      }
+
+      h1 {
+        font-family: Big Shoulders Display;
+        font-weight: 700;
+        font-size: 40px;
+        margin-bottom: 2rem;
+      }
+      p {
+        opacity: 0.75;
+        font-size: 15px;
+      }
+
+      button {
+        height: $button-height;
+        width: $button-width;
+
+        // Half the size of the button to give the semi-circle look
+        border-radius: 1.5rem;
+        margin-top: 5.75rem;
+        border: 0;
+      }
+    }
+    .col-1 {
+      background-color: #e28625;
+      border-radius: 8px 0 0 8px;
+      button {
+        color: #e28625;
+        font-size: 15px;
+
+        &:hover {
+          background-color: #e28625;
+          color: #f2f2f2;
+          border: #f2f2f2 2px solid;
+        }
+      }
+    }
+
+    .col-2 {
+      background-color: #006971;
+      button {
+        color: #006971;
+        font-size: 15px;
+
+        &:hover {
+          background-color: #006971;
+          color: #f2f2f2;
+          border: #f2f2f2 2px solid;
+        }
+      }
+    }
+
+    .col-3 {
+      background-color: #004140;
+      border-radius: 0 8px 8px 0;
+
+      button {
+        color: #004140;
+        font-size: 15px;
+
+        &:hover {
+          background-color: #004140;
+          color: #f2f2f2;
+          border: #f2f2f2 2px solid;
+        }
+      }
+    }
+  }
+}
+
+// Media query for the tab view and when the orientation is landscape(width>heigth).
+@media (max-width: 1000px) {
+  .main-section {
+    height: auto;
+    .card {
+      max-height: 100%;
+      margin: 1em 0;
+    }
+  }
+}
+
+// Media query for the mobile view when the orientation is portrait(height>width).
+@media (max-width: 767px) {
+  .main-section {
+    height: auto;
+
+    .card {
+      max-height: 100%;
+      margin: 5.5rem 0;
+      flex-direction: column;
+
+      .col {
+        button {
+          margin-top: 2rem;
+        }
+      }
+      .col-1 {
+        border-radius: 8px 8px 0px 0px;
+      }
+
+      .col-3 {
+        border-radius: 0px 0px 8px 8px;
+      }
+    }
+  }
+}

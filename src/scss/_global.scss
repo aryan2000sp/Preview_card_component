@@ -1,0 +1,15 @@
+// Font Families
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+
+// Global mixins
+@mixin flex-box($flex-direction, $justify, $align) {
+  display: flex;
+  flex-direction: $flex-direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+$button-height: 3rem;
+$button-width: 9.125rem;
+$border-radius: 8px;
